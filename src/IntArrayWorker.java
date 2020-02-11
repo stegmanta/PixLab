@@ -42,17 +42,16 @@ public class IntArrayWorker {
 		return total;
 	}
 
-	public int getCount(){
-		// int x = 0;
-		// int y = 0;
+	public int getCount(int m){
 		int total = 0;
-		for(int i = 0; i< matrix.length ; i++){// useless
-			for(int w = 0; i < matrix[0].length; w++){// didn't mean to re loop
-				if(matrix[i][w] = theMatrix){
-
+		for(int row = 0; row < matrix.length ; row++){// useless
+			for(int col = 0; col < matrix[0].length; col++){// didn't mean to re loop
+				if(matrix[row][col] == m){
+					total++;
 				}
 			}
 		}
+		return total;
 	}
 
 	/**
@@ -97,5 +96,29 @@ public class IntArrayWorker {
 			}
 		}
 	}
+
+	public int getLargest(){
+		int largest = 0;
+		for(int row = 0; row < matrix.length ; row++){// useless
+			for(int col = 0; col < matrix[0].length; col++){// didn't mean to re loop
+				if(matrix[row][col] > largest){
+					largest = matrix[row][col];
+				}
+			}
+		}
+		return largest;
+	}
+
+	public int getColTotal(int col){
+		int total = 0;
+		for(int row = 0; row < matrix[0].length; row++){// didn't mean to re loop
+		total+= matrix[row][col];
+		}
+		return total;
+		
+
+
+	}
+	
 
 }
