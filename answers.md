@@ -5,3 +5,8 @@
 5. Yes this code would compile since SimplePicture implements DigitalPicture and Picture inherits SimplePicture
 6. No this code would not compile since SimplePicture is the parent of Picture SimplePicture cannot be made as a new Picture
 7. Yes this code would compile since SimplePicture is the parent of Picture, Picture can be used to make a new SimplePicture 
+
+
+-------Activity 6
+
+

@@ -140,6 +140,27 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	public void mirrorVerticalRightToLeft(){
+		Pixel[][] pixels = this.getPixels2D();
+		Pixel leftPixel = null;
+		Pixel rightPixel = null;
+		int width = pixels[0].length;
+		for (int row = 0; row < pixels.length; row++) {
+			for (int col = 0; col < width / 2; col++) {
+				leftPixel = pixels[row][col];
+				rightPixel = pixels[row][width - 1 - col];
+				leftPixel.setColor(rightPixel.getColor());
+			}
+		}
+	}
+
+	public void mirrorHorizontal(){
+		Pixel[][] pixels = this.getPixels2D();
+		Pixel topPixel = null;
+		Pixel bottomPixel = null;
+		int height = pixels[1].length;
+	}
+
 	/**
 	 * Method that mirrors the picture around a vertical mirror in the center of
 	 * the picture from left to right
@@ -153,7 +174,7 @@ public class Picture extends SimplePicture {
 			for (int col = 0; col < width / 2; col++) {
 				leftPixel = pixels[row][col];
 				rightPixel = pixels[row][width - 1 - col];
-				rightPixel.setColor(leftPixel.getColor());
+				leftPixel.setColor(rightPixel.getColor());
 			}
 		}
 	}
