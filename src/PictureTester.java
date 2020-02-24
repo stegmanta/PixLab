@@ -61,6 +61,13 @@ public class PictureTester
     caterpillar.explore();
   }
 
+  public static void testMirrorHorizontal(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontal();
+    redMotorcycle.explore();
+  }
+
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -116,6 +123,7 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-    testMirrorVerticalRightToLeft();
+    // testMirrorVerticalRightToLeft();
+    testMirrorHorizontal();
   }
 }
