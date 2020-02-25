@@ -68,6 +68,20 @@ public class PictureTester
     redMotorcycle.explore();
   }
 
+  public static void testMirrorHorizontalBotToTop(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontalBotToTop();
+    redMotorcycle.explore();
+  }
+
+  public static void testMirrorDiagonal(){
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -124,6 +138,8 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
     // testMirrorVerticalRightToLeft();
-    testMirrorHorizontal();
+    // testMirrorHorizontal();
+    // testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
   }
 }
