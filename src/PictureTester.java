@@ -105,12 +105,26 @@ public class PictureTester
     seagull.mirrorGull();
     seagull.explore();
   }
+
+  public static void testCopyTwo(){
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.createCollage();
+    canvas.copyTwo(canvas, 89,80,70,50);
+    canvas.explore();
+  }
   
   /** Method to test the collage method */
   public static void testCollage()
   {
     Picture canvas = new Picture("640x480.jpg");
     canvas.createCollage();
+    canvas.explore();
+  }
+
+  public static void testMyCollage(){
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.createCollage();
+    canvas.myCollage();
     canvas.explore();
   }
   
@@ -156,6 +170,8 @@ public class PictureTester
     // testMirrorHorizontalBotToTop();
     // testMirrorDiagonal();
     // testMirrorArms();
-    testMirrorGull();
+    // testMirrorGull();
+    // testCopyTwo();
+    testMyCollage();
   }
 }
