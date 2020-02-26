@@ -157,7 +157,7 @@ public class PictureTester
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
-    //testEdgeDetection();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
@@ -172,6 +172,6 @@ public class PictureTester
     // testMirrorArms();
     // testMirrorGull();
     // testCopyTwo();
-    testMyCollage();
+    // testMyCollage();
   }
 }
